@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Đơn đăng nhập hội phan cuồng đội tuyển bóng đá VN</h1>
+    <br />
+    <h2>Chào mừng đến với hội của những trái tim đỏ rực 😉😉</h2>
+    <form>
+      <label for="name">Họ và tên(nhập đúng để chúng tôi gọi nha!):</label>
+      <br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="VD: Nguyễn Văn A"
+        required
+        size="30"
+      />
+      <br /><br />
+      <label for="email">Email để nhận link xem chất lượng cao:</label>
+      <br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="VD: nguyenvana@gmail.com"
+        required
+      />
+      <br /><br />
+      <label for="comment">Mô tả cảm xúc:</label>
+      <br />
+      <textarea
+        id="comment"
+        name="comment"
+        placeholder="Hãy chia sẻ cảm xúc của bạn..."
+        rows="4"
+        cols="50"
+      ></textarea>
+      <br /><br />
+      <fieldset>
+        <legend>Giới tính của ban (để xếp chỗ ngồi)</legend>
+        <label for="male">
+          <input type="radio" id="male" name="gender" value="male" /> Nam
+        </label>
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="female" /> Nữ
+        </label>
+        <label for="other">
+          <input type="radio" id="other" name="gender" value="other" /> Khác
+        </label>
+      </fieldset>
+      <br /><br />
+      <label for="positon">Vị trí bạn muốn đá trên sân:</label>
+      <select name="position" id="position">
+        <option value="thủ môn">Thủ môn</option>
+        <option value="hậu vệ">Hậu vệ</option>
+        <option value="tiền vệ">Tiền vệ</option>
+        <option value="tiền đạo">Tiền đạo</option>
+      </select>
+      <br /><br />
+      <label for="fan-level">Mức độ fan cuồng của bạn (từ 1 đến 10):</label>
+      <input
+        type="number"
+        id="fan-level"
+        name="fan-level"
+        min="1"
+        max="10"
+        step="1"
+      />
+      <br /><br />
+      <label for="favorite-player">Cầu thủ yêu thích:</label>
+      <br />
+      <input
+        type="text"
+        id="favorite-player"
+        name="favorite-player"
+        list="players"
+      />
+      <datalist id="players">
+        <option value="Nguyễn Quang Hải"></option>
+        <option value="Đoàn Văn Hậu"></option>
+        <option value="Nguyễn Tiến Linh"></option>
+        <option value="Trần Đình Trọng"></option>
+        <option value="Phan Văn Đức"></option>
+      </datalist>
+      <br /><br />
+      <p><b>Bạn có cam kết không quay lưng:</b></p>
+      <br />
+      <label for="commitment">Tôi cam kết:</label>
+      <input
+        type="checkbox"
+        id="commitment"
+        name="commitment"
+        value="yes"
+        checked
+      />
+      <br /><br />
+      <button type="submit">Gửi đơn đăng ký</button>
+      <button type="reset">Xóa thông tin</button>
+    </form>
+  </body>
+</html>
